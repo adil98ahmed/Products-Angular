@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div *ngFor="let item of cartItems" class="col-12 d-flex">
+            <img [src]="item.image" />
+            <div class="px-4">
+                <h3>{{item.title}}</h3>
+                <p>{{item.description}}</p>
+                <p>{{item.category}}</p>
+                <p class="text-success">{{item.price}}</p>
+                <button (click)="deleteItem(item.id)" class="btn btn-danger">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>

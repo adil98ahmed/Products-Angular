@@ -1,0 +1,7 @@
+.productItem{
+    border: solid 1px gray;
+    height: 400px;
+}
+.productItem img{
+    height: 250px;
+}
